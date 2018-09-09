@@ -15,7 +15,7 @@ module.exports = {
         rules: [
             {
                 test: /\.vue$/,
-                use: 'vue-loader',
+                use: 'vue-loader'
             },
             {
                 test: /\.scss$/,
@@ -37,7 +37,7 @@ module.exports = {
         new VueLoaderPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: 'index.html',
+            template: 'src/index.html',
             inject: true
         })
     ]

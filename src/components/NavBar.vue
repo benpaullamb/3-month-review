@@ -1,5 +1,6 @@
 <template>
     <nav>
+        <router-link to="/">Home</router-link>
         <router-link to="/overview">Overview</router-link>
         <router-link to="/achievements">Achievements</router-link>
         <router-link to="/objectives">Objectives</router-link>
@@ -18,7 +19,7 @@ nav {
     background-color: white;
     display: flex;
     justify-content: space-between;
-    width: 25%;
+    width: 30%;
     padding: 1rem;
     border-radius: 1rem;
     opacity: 0.9;

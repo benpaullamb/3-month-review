@@ -1,0 +1,7 @@
+{
+    "extends": "airbnb-base",
+    "eslint.validate": [
+        "javascript",
+        "vue"
+    ]
+}

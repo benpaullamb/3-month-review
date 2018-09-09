@@ -35,6 +35,8 @@ article {
 
     h1 {
         margin: 1rem 5%;
+        animation: fadeIn;
+        animation-duration: 1s;
     }
 
     section {

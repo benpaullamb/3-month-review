@@ -23,15 +23,18 @@ export default {
 $panel-opacity: 0.9;
 
 .panel {
-    border: 0.8rem solid white;
-    opacity: $panel-opacity;
-    box-shadow: 0 0 1px 1px white;
+    box-shadow: 0 0 1px 1px hsla(0, 0, 100%, $panel-opacity);
     width: 30%;
     height: 100%;
     border-radius: 2rem;
     padding: 1rem 2rem;
+    background-color: hsla(0, 0, 100%, $panel-opacity);
     animation-name: dropIn;
     animation-duration: 1s;
+
+    &:hover {
+        box-shadow: 0 0 3px 3px white;
+    }
 
     .content {
         margin-top: 1rem;
@@ -41,11 +44,13 @@ $panel-opacity: 0.9;
 @keyframes dropIn {
     from {
         transform: translate(0, -100vh);
-        opacity: 0;
+        background-color: hsla(0, 0, 100%, 0);
+        box-shadow: 0 0 1px 1px hsla(0, 0, 100%, 0);
     }
     to {
         transform: translate(0);
-        opacity: $panel-opacity;
+        background-color: hsla(0, 0, 100%, $panel-opacity);
+        box-shadow: 0 0 1px 1px hsla(0, 0, 100%, $panel-opacity);
     }
 }
 </style>
