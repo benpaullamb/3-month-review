@@ -15,6 +15,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$ibm-blue-50: #2d74da;
+
 nav {
     background-color: white;
     display: flex;
@@ -25,8 +27,13 @@ nav {
     opacity: 0.9;
 
     a {
+        font-family: 'IBM Plex Medium';
         text-decoration-line: none;
         color: black;
+
+        &:hover {
+            color: $ibm-blue-50;
+        }
     }
 }
 </style>

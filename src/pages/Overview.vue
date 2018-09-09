@@ -1,9 +1,9 @@
 <template>
     <page title="Overview">
-        <content-panel title="Personal">
+        <content-panel title="Personal" anim="slideInLeft">
             <p>I am...</p>
         </content-panel>
-        <content-panel title="Role">
+        <content-panel title="Role" anim="slideInRight">
             <p>I am...</p>
         </content-panel>
     </page>

@@ -1,12 +1,12 @@
 <template>
     <page title="Objectives">
-        <content-panel title="Want To Do">
+        <content-panel title="Want To Do" anim="slideInLeft">
             <p>I will...</p>
         </content-panel>
-        <content-panel title="By the 6 and 12 Month Review...">
+        <content-panel title="By the 6 and 12 Month Review..." anim="dropIn">
             <p>I will...</p>
         </content-panel>
-        <content-panel title="Growth Points">
+        <content-panel title="Growth Points" anim="slideInRight">
             <p>I will...</p>
         </content-panel>
     </page>

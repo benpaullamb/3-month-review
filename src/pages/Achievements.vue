@@ -1,12 +1,12 @@
 <template>
     <page title="Achievements">
-        <content-panel title="Learned">
+        <content-panel title="Learned" anim="slideInLeft">
             <p>I have...</p>
         </content-panel>
-        <content-panel title="Done">
+        <content-panel title="Done" anim="dropIn">
             <p>I have...</p>
         </content-panel>
-        <content-panel title="Seen">
+        <content-panel title="Seen" anim="slideInRight">
             <p>I have...</p>
         </content-panel>
     </page>

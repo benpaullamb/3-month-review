@@ -1,5 +1,5 @@
 <template>
-    <div class="panel">
+    <div class="panel" :class="{ 'dropInAnim': anim === 'dropIn', 'slideInLeftAnim': anim === 'slideInLeft', 'slideInRightAnim': anim === 'slideInRight' }">
         <h2>{{title}}</h2>
         <div class="content">
             <slot></slot>
@@ -14,6 +14,9 @@ export default {
             type: String,
             required: true,
             default: 'Untitled Panel'
+        },
+        anim: {
+            type: String
         }
     }
 }
@@ -29,7 +32,6 @@ $panel-opacity: 0.9;
     border-radius: 2rem;
     padding: 1rem 2rem;
     background-color: hsla(0, 0, 100%, $panel-opacity);
-    animation-name: dropIn;
     animation-duration: 1s;
 
     &:hover {
@@ -41,9 +43,47 @@ $panel-opacity: 0.9;
     }
 }
 
+.dropInAnim {
+    animation-name: dropIn;
+}
+
+.slideInLeftAnim {
+    animation-name: slideInLeft;
+}
+
+.slideInRightAnim {
+    animation-name: slideInRight;
+}
+
 @keyframes dropIn {
     from {
         transform: translate(0, -100vh);
+        background-color: hsla(0, 0, 100%, 0);
+        box-shadow: 0 0 1px 1px hsla(0, 0, 100%, 0);
+    }
+    to {
+        transform: translate(0);
+        background-color: hsla(0, 0, 100%, $panel-opacity);
+        box-shadow: 0 0 1px 1px hsla(0, 0, 100%, $panel-opacity);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translate(-100vw, 0);
+        background-color: hsla(0, 0, 100%, 0);
+        box-shadow: 0 0 1px 1px hsla(0, 0, 100%, 0);
+    }
+    to {
+        transform: translate(0);
+        background-color: hsla(0, 0, 100%, $panel-opacity);
+        box-shadow: 0 0 1px 1px hsla(0, 0, 100%, $panel-opacity);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translate(100vw, 0);
         background-color: hsla(0, 0, 100%, 0);
         box-shadow: 0 0 1px 1px hsla(0, 0, 100%, 0);
     }

@@ -1,9 +1,9 @@
 <template>
     <page title="Feedback">
-        <content-panel title="ACE Feedback">
+        <content-panel title="ACE Feedback" anim="slideInLeft">
             <p>I am...</p>
         </content-panel>
-        <content-panel title="Worries">
+        <content-panel title="Worries" anim="slideInRight">
             <p>I am...</p>
         </content-panel>
     </page>

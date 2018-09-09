@@ -33,12 +33,13 @@ $date-margin: 4rem;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'IBM Plex Light';
 }
 
 body {
     background-image: url('./images/london-skyline-sunrise.png');
     background-size: cover;
+    overflow: hidden;
 }
 
 h1 {
@@ -88,5 +89,45 @@ p, span {
     to {
         opacity: 0.9;
     }
+}
+
+@font-face {
+    font-family: 'IBM Plex Thin';
+    src: url('fonts/IBMPlexSans-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IBM Plex Extra Light';
+    src: url('fonts/IBMPlexSans-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IBM Plex Light';
+    src: url('fonts/IBMPlexSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IBM Plex';
+    src: url('fonts/IBMPlexSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IBM Plex Medium';
+    src: url('fonts/IBMPlexSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IBM Plex Semi Bold';
+    src: url('fonts/IBMPlexSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IBM Plex Bold';
+    src: url('fonts/IBMPlexSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IBM Plex Text';
+    src: url('fonts/IBMPlexSans-Text.ttf') format('truetype');
 }
 </style>
