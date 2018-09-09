@@ -30,6 +30,7 @@ nav {
         font-family: 'IBM Plex Medium';
         text-decoration-line: none;
         color: black;
+        text-transform: uppercase;
 
         &:hover {
             color: $ibm-blue-50;
