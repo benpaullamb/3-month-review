@@ -67,6 +67,7 @@ p, span {
         span.date, span.balance {
             font-size: $h6-font-size;
             font-weight: bold;
+            font-family: 'IBM Plex Bold';
         }
 
         span.balance {

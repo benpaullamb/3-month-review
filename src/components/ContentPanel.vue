@@ -24,7 +24,6 @@ export default {
 
 <style lang="scss" scoped>
 $panel-opacity: 0.9;
-$ibm-blue-50: #2d74da;
 
 .panel {
     box-shadow: 0 0 1px 1px hsla(0, 0, 100%, $panel-opacity);
@@ -36,11 +35,13 @@ $ibm-blue-50: #2d74da;
     animation-duration: 1s;
 
     &:hover {
-        box-shadow: 0 0 3px 3px $ibm-blue-50;
+        box-shadow: 0 0 3px 3px white;
     }
 
     .content {
         margin-top: 1rem;
+        height: 90%;
+        overflow: auto;
     }
 }
 

@@ -46,6 +46,10 @@ $h3-font-size: 48px;
         h2 {
             font-size: $h2-font-size;
         }
+
+        h1, h2, h3 {
+            font-family: 'IBM Plex Semi Bold';
+        }
     }
 }
 </style>
