@@ -1,8 +1,10 @@
 <template>
-    <div class="panel" :class="{ 'dropInAnim': anim === 'dropIn', 'slideInLeftAnim': anim === 'slideInLeft', 'slideInRightAnim': anim === 'slideInRight' }">
-        <h2>{{title}}</h2>
-        <div class="content">
-            <slot></slot>
+    <div class="panel-container">
+        <div class="panel" :class="{ 'dropInAnim': anim === 'dropIn', 'slideInLeftAnim': anim === 'slideInLeft', 'slideInRightAnim': anim === 'slideInRight' }">
+            <h2>{{title}}</h2>
+            <div class="content">
+                <slot></slot>
+            </div>
         </div>
     </div>
 </template>
@@ -25,23 +27,29 @@ export default {
 <style lang="scss" scoped>
 $panel-opacity: 0.9;
 
-.panel {
-    box-shadow: 0 0 1px 1px hsla(0, 0, 100%, $panel-opacity);
-    width: 30%;
+.panel-container {
+    width: 100%;
     height: 100%;
-    border-radius: 2rem;
-    padding: 1rem 2rem;
-    background-color: hsla(0, 0, 100%, $panel-opacity);
-    animation-duration: 1s;
+    padding: 1rem;
 
-    &:hover {
-        box-shadow: 0 0 3px 3px white;
-    }
+    .panel {
+        box-shadow: 0 0 1px 1px hsla(0, 0, 100%, $panel-opacity);
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        padding: 1rem 2rem;
+        background-color: hsla(0, 0, 100%, $panel-opacity);
+        animation-duration: 1s;
 
-    .content {
-        margin-top: 1rem;
-        height: 90%;
-        overflow: auto;
+        &:hover {
+            box-shadow: 0 0 3px 3px white;
+        }
+
+        .content {
+            margin-top: 1rem;
+            height: 90%;
+            overflow: auto;
+        }
     }
 }
 
