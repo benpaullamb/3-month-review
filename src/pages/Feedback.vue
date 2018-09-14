@@ -70,7 +70,15 @@
             </div>
         </content-panel>
         <content-panel title="Worries" anim="slideInRight">
-            <p>I am...</p>
+            <ul>
+                <li><i class="fas fa-code"></i>Talking to clients – not knowing answers to their questions/contributing to discussions/seeming incompetent</li>
+                <li><i class="fas fa-code"></i>Not understanding the business jargon or concepts for a project at all/quickly enough</li>
+                <li><i class="fas fa-code"></i>Having to go and work on a client site</li>
+                <li><i class="fas fa-code"></i>A system I’ve made for a client failing</li>
+                <li><i class="fas fa-code"></i>Black bears</li>
+                <li><i class="fas fa-code"></i>Presenting</li>
+                <li><i class="fas fa-code"></i>Asking for help too frequently</li>
+            </ul>
         </content-panel>
     </page>
 </template>
@@ -118,7 +126,7 @@ $ibm-blue-50: #2d74da;
     }
 }
 
-h3 {
-    margin-bottom: 0.5rem;
+li {
+    margin-bottom: 5%;
 }
 </style>

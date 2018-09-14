@@ -47,7 +47,7 @@ $panel-opacity: 0.9;
 
         .content {
             margin-top: 1rem;
-            height: 90%;
+            height: 88%;
             overflow: auto;
         }
     }

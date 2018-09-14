@@ -50,8 +50,21 @@ h2 {
     font-size: $h4-font-size;
 }
 
-p, span {
+h3 {
+    font-size: $h5-font-size;
+    margin-bottom: 1%;
+}
+
+li {
+    font-size: $h6-font-size;
+}
+
+p {
     font-size: $body1-font-size;
+}
+
+i.fa-code {
+    margin-right: 10px;
 }
 
 .container {
