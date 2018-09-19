@@ -1,19 +1,17 @@
 <template>
     <page title="Objectives">
         <content-panel title="Want To Do" anim="slideInLeft">
+            <ul class="right-list">
+                <li><i class="fas fa-code"></i>Go back to Japan on my own in April 2019</li>
+                <li><i class="fas fa-code"></i>Have a Wake Induced Lucid Dream (WILD)</li>
+                <li><i class="fas fa-code"></i>Re-create my workout keeper Android app</li>
+            </ul>
             <ul>
                 <li><i class="fas fa-code"></i>Learn better design practices</li>
                 <li><i class="fas fa-code"></i>Complete a project on my own</li>
                 <li><i class="fas fa-code"></i>Use Mobile-First design</li>
-                <li><i class="fas fa-code"></i>I wanna be the very best</li>
-                <li><i class="fas fa-code"></i>like no one ever was</li>
+                <li><i class="fas fa-code"></i>Work on a client project instead of an internal one</li>
             </ul>
-        </content-panel>
-        <content-panel title="By the 6 and 12 Month Review..." anim="dropIn">
-            <p>I will...</p>
-        </content-panel>
-        <content-panel title="Growth Points" anim="slideInRight">
-            
         </content-panel>
     </page>
 </template>
@@ -31,7 +29,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-li {
-    margin-bottom: 9%;
+ul {
+    width: 50%;
+
+    li {
+        margin-bottom: 14%;
+    }
+}
+
+.right-list {
+    float: right;
 }
 </style>

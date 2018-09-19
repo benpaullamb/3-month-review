@@ -1,5 +1,7 @@
 const path = require('path');
-const { VueLoaderPlugin } = require('vue-loader');
+const {
+    VueLoaderPlugin
+} = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -12,8 +14,7 @@ module.exports = {
         path: path.resolve(__dirname, 'docs')
     },
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.vue$/,
                 use: 'vue-loader'
             },
